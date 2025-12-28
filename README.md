@@ -1,3 +1,3 @@
 # My-Projects....
 
-I have used java script functions in the HTML file. Pleace do check it. 
+I have used java script functions in the HTML file for Basic Calculator Project. Pleace check it. 
