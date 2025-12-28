@@ -1,1 +1,3 @@
 # My-Projects....
+
+I have used java script functions in the HTML file. Pleace do check it. 
