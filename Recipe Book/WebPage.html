@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPE BOOK</title>
+    <link rel="stylesheet" href="WPStyle.css"></link>
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+        <input type="text" id="searchInput" placeholder="Search by name or ingredient..." onkeyup="searchRecipes()">
+    </header>
+
+    <main>
+        <section id="recipe-list-section">
+            <h2>All Recipes</h2>
+            <div id="recipeList" class="recipe-grid"></div>
+        </section>
+
+         <section id="add-recipe">
+            <h2>Add New Recipe</h2>
+            <form id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Recipe Name" required>
+                <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+                <textarea id="steps" placeholder="Preparation Steps" required></textarea>
+                <input type="text" id="imageUrl" placeholder="Image URL">
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script src="WPScript.js"></script>
+</body>
+</html>
