@@ -9,4 +9,7 @@ I have used java script functions in the HTML file for Basic Calculator Project.
 The Student-Teacher Booking Appointment System is a modular web application designed to optimize the scheduling process in educational environments. By moving from traditional queueing to a digital BaaS (Backend-as-a-Service) model, this system reduces wait times and enhances communication between students and faculty.
 
 ### ii. Technologies Used 🛠️
-* **Frontend**:HTML5, CSS3 (Glassmorphism), JavaScript (ES6 Modules)
+* **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (ES6 Modules)
+* **Backend**: Google Firebase (Cloud Firestore)
+* **Auth**: Firebase Authentication
+* **Logging**: Custom JS Logging Library
