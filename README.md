@@ -16,4 +16,4 @@ The Student-Teacher Booking Appointment System is a modular web application desi
 
 ### iii. Low-Level Design(LLD) & Data Models 📐
 
-![Data Stucture Diagram](./Assets Folder/Data Stucture.png)
+<img width="500" height="346" alt="Image" src="https://github.com/user-attachments/assets/fbfdc33f-c131-4819-a740-122311d2f5ad" />
