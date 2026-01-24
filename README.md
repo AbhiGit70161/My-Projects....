@@ -13,3 +13,6 @@ The Student-Teacher Booking Appointment System is a modular web application desi
 * **Backend**: Google Firebase (Cloud Firestore)
 * **Auth**: Firebase Authentication
 * **Logging**: Custom JS Logging Library
+
+### iii. Low-Level Design(LLD) & Data Models 📐
+
