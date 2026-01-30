@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator</title>
+    <link rel="stylesheet" href="VPstyle.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>My Virtual Pet</h1>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat">
+                <label>Hunger</label>
+                <div class="progress-bar"><div id="hunger-bar" class="fill"></div></div>
+            </div>
+            <div class="stat">
+                <label>Happiness</label>
+                <div class="progress-bar"><div id="happiness-bar" class="fill"></div></div>
+            </div>
+            <div class="stat">
+                <label>Energy</label>
+                <div class="progress-bar"><div id="energy-bar" class="fill"></div></div>
+            </div>
+        </div>
+
+       <div id="pet-container" class="pet-neutral">
+    <div class="dog-unified">
+        <div class="tears">
+            <div class="tear left"></div>
+            <div class="tear right"></div>
+        </div>
+
+        <div class="dog-head">
+            <div class="ear-l"></div>
+            <div class="ear-r"></div>
+            <div class="face">
+                <div class="eye-l"><div class="pupil"></div></div>
+                <div class="eye-r"><div class="pupil"></div></div>
+                <div class="snout">
+                    <div class="nose"></div>
+                    <div class="tongue"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dog-body">
+            <div class="chest"></div>
+            <div class="paw-l"></div>
+            <div class="paw-r"></div>
+            <div class="tail"></div>
+        </div>
+    </div>
+    <p id="pet-message">Ready to play! 🐾</p>
+</div>
+
+        <div class="controls">
+            <button onclick="feedPet()">Feed 🦴</button>
+            <button onclick="playPet()">Play 🎾</button>
+            <button onclick="sleepPet()">Sleep 💤</button>
+        </div>
+    </div>
+    <script src="VPlogics.js"></script>
+</body>
+</html>
