@@ -1,0 +1,306 @@
+:root {
+    --bg-color: #f0f4f8;
+    --bg-overlay: rgba(255, 255, 255, 0.85);
+    --panel-color: #ffffff;
+    --primary-text: #333;
+    --hunger-color: #ff4757;
+    --happiness-color: #ffa502;
+    --energy-color: #2ed573;
+    --button-hover: #57606f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/015/238/792/small/abstract-animal-head-background-design-with-pattern-composition-trendy-wallpaper-for-creative-project-and-print-design-vector.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background: var(--bg-overlay);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.stats-container {
+    margin-bottom: 2rem;
+}
+
+.stat {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.stat label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 100%; /* JS will change this */
+    transition: width 0.3s ease-in-out;
+}
+
+#hunger-bar { background-color: var(--hunger-color); }
+#happiness-bar { background-color: var(--happiness-color); }
+#energy-bar { background-color: var(--energy-color); }
+
+#pet-container {
+    margin: 3rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Base Pet Shape */
+.pet-character {
+    width: 100px;
+    height: 100px;
+    background-color: #ffbe76;
+    border-radius: 50% 50% 45% 45%;
+    border: 4px solid #333;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+    animation: idleFloat 3s infinite ease-in-out;
+}
+
+/* Eyes */
+.pet-character::before, .pet-character::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+}
+.pet-character::before { left: 25%; }
+.pet-character::after { right: 25%; }
+
+/* Idle Animation */
+@keyframes idleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Happy State */
+.pet-happy .pet-character {
+    background-color: #f9ca24;
+    transform: scale(1.1);
+}
+
+/* Sad State */
+.pet-sad .pet-character {
+    background-color: #95afc0;
+    filter: grayscale(0.5);
+}
+
+/* Sleeping State */
+.pet-sleep .pet-character {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    flex: 1;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#pet-message {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.dog-unified {
+    position: relative;
+    width: 160px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+/* Head Positioning */
+.dog-head {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100px;
+    height: 90px;
+    background: #e67e22;
+    border-radius: 50% 50% 45% 45%;
+    border: 3px solid #5d4037;
+    z-index: 10;
+}
+
+/* Detailed Eyes & Snout */
+.face { 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.eye-l, .eye-r {
+    position: absolute; 
+    top: 25px; 
+    width: 20px; 
+    height: 20px;
+    background: white; 
+    border-radius: 50%; 
+    border: 2px solid #5d4037;
+}
+.eye-l { left: 20px; } .eye-r { right: 20px; }
+
+.pupil { width: 8px; 
+    height: 8px; 
+    background: #333; 
+    border-radius: 50%; 
+    margin: 4px auto; 
+}
+
+.snout {
+    position: absolute; bottom: 10px; left: 25px; width: 50px; height: 35px;
+    background: #f39c12; border-radius: 50%; border: 2px solid #5d4037;
+}
+.nose { width: 16px; height: 10px; background: #333; border-radius: 5px; margin: 5px auto; }
+
+/* The Body */
+.dog-body {
+    position: absolute;
+    top: 90px; left: 25px; width: 110px; height: 85px;
+    background: #d35400; border-radius: 40%; border: 3px solid #5d4037;
+    z-index: 5;
+}
+
+/* Ears - Attached to the Head */
+.ear-l, .ear-r {
+    position: absolute;
+    top: -15px; 
+    width: 30px;
+    height: 50px;
+    background: #d35400; /* Slightly darker than head */
+    border: 3px solid #5d4037;
+    border-radius: 50% 50% 20% 20%;
+    z-index: -1; /* Tucks behind the head background */
+    transition: transform 0.3s ease-in-out;
+}
+.ear-l { left: -20px; transform: rotate(-35deg); }
+.ear-r { right: -20px; transform: rotate(35deg); }
+
+/* Paws - Attached to the Body */
+.paw-l, .paw-r {
+    position: absolute;
+    bottom: -10px;
+    width: 35px;
+    height: 25px;
+    background: #e67e22;
+    border: 3px solid #5d4037;
+    border-radius: 50% 50% 30% 30%;
+    z-index: 6;
+}
+.paw-l { left: 10px; }
+.paw-r { right: 10px; }
+
+/* Animations and States */
+.tail {
+   position: absolute;
+    top: 40px;
+    right: -40px;
+    width: 45px;
+    height: 12px;
+    background: #d35400;
+    border: 2px solid #5d4037;
+    border-radius: 20px;
+    transform-origin: left center;
+    z-index: -2;
+    animation: wag 0.6s infinite alternate ease-in-out;
+}
+
+/* Tail Wag Animation Logic */
+@keyframes wag {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(30deg); }
+}
+
+/* Hunger = 0: Crying State */
+.tear {
+    position: absolute; 
+    width: 10px; 
+    height: 10px; 
+    background: #3498db;
+    border-radius: 0 50% 50% 50%; 
+    transform: rotate(45deg); 
+    opacity: 0;
+    z-index: 15; 
+    top: 50px;
+}
+.tear.left { left: 55px; } .tear.right { right: 55px; }
+
+@keyframes cry {
+    0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+    100% { transform: translateY(50px) rotate(45deg); opacity: 0; }
+}
+
+.pet-happy .tail {
+    animation-duration: 0.2s;
+}
+
+.pet-starving .tear { animation: cry 1s infinite; }
+.pet-starving .tail { animation: none; transform: rotate(45deg); }
+
+.pet-happy .ear-l { transform: rotate(-45deg) translateY(-10px); }
+.pet-happy .ear-r { transform: rotate(45deg) translateY(-10px); }
+.pet-happy .tail { animation: wag 0.2s infinite alternate; }
+
+/* Starving/Sad State: Droopy ears and no wagging */
+.pet-sad .ear-l, .pet-starving .ear-l { transform: rotate(-10deg) translateY(10px); }
+.pet-sad .ear-r, .pet-starving .ear-r { transform: rotate(10deg) translateY(10px); }
+.pet-sad .tail, .pet-starving .tail { animation: none; transform: rotate(70deg); }
