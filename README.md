@@ -19,7 +19,8 @@ The Student-Teacher Booking Appointment System is a modular web application desi
 <img width="500" height="346" alt="Image" src="https://github.com/user-attachments/assets/fbfdc33f-c131-4819-a740-122311d2f5ad" />
 
 ### iv. System Architecture 🏗️
-i. **Presentation Layer(Client)**: A responsive Single Page Application (SPA) built with vanilla JS and modular CSS.
-ii. **Sevice Layer(Firebase)**: Handles authentication and real-time database listeners.
-iii. **Data Layer(Firestore)**: A NoSQL database stuctured for fast retrieval and low latency.
+The project follows a **Three-Tier Architecture** optimised for scalability and speed.
+* **Presentation Layer(Client)**: A responsive Single Page Application (SPA) built with vanilla JS and modular CSS.
+* **Sevice Layer(Firebase)**: Handles authentication and real-time database listeners.
+* **Data Layer(Firestore)**: A NoSQL database stuctured for fast retrieval and low latency.
 
