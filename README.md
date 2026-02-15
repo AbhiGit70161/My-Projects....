@@ -24,5 +24,5 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
 * **Sevice Layer(Firebase)**: Handles authentication and real-time database listeners.
 * **Data Layer(Firestore)**: A NoSQL database stuctured for fast retrieval and low latency.
 
-<img width="368" height="419" alt="Image" src="https://github.com/user-attachments/assets/3797fd1e-eaa2-4b45-a381-2a59b786d852" />
+<img width="330" height="381" alt="Image" src="https://github.com/user-attachments/assets/3797fd1e-eaa2-4b45-a381-2a59b786d852" />
 
