@@ -22,4 +22,20 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
 <img width="330" height="381" alt="Image" src="https://github.com/user-attachments/assets/3797fd1e-eaa2-4b45-a381-2a59b786d852" />
 
 ## v. System Modules & Workflow 🔄️
+1. **Authentication Module**
+   * Users (Admins/Students/Teachers) can loggin by using their credentials.
+   * Loggin failed if they put wrong credentials.
+   * [User Login & Signup](Auth.html)
+   * [Authentication Logic](auth.js)
+2. **Admin Module**
+   * Manage Teacher profiles (Add/Update/Delete)
+   * Moderate Student registrations for security.
+3. **Teacher Module**
+   * Manage schedule availability.
+   * Approve or Cancel pending student appointments.
+   * View student messages and full appointment history.
+4. **Student Module**
+   * Real-time search for mentors by name or subject.
+   * Book slots with specific purposes.
+   * Direct messaging to faculty.
 
