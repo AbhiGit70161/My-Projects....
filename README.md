@@ -26,3 +26,4 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
 
 <img width="330" height="381" alt="Image" src="https://github.com/user-attachments/assets/3797fd1e-eaa2-4b45-a381-2a59b786d852" />
 
+### v. System Modules & Workflow 🔄️
