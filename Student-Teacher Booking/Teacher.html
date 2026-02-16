@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Unified Mentor</title>
+    <link rel="stylesheet" href="allstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="menu-icon-btn">☰</button>
+                <div class="logo">
+                    <h2>Teacher<span>Hub</span></h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-item active" data-target="appointments-section">All Appointments</li>
+                    <li class="nav-item" data-target="requests-section">Pending Requests</li>
+                    <li class="nav-item" data-target="schedule-section">My Schedule</li>
+                    <li class="nav-item" data-target="messages-section">Student Messages</li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn delete-btn"><span class="logout-text">Logout</span></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-titles">
+                    <h1 id="section-title">All Appointments</h1>
+                    <p class="welcome-text">Welcome, <span id="userNameDisplay">Teacher</span>!</p>
+                </div>
+            </header>
+
+            <section id="appointments-section" class="content-section">
+                <div class="glass-card table-container">
+                    <table id="allAppointmentsTable">
+                        <thead>
+                            <tr>
+                                <th>Date/Time</th>
+                                <th>Student Name</th>
+                                <th>Purpose</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentListBody">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="requests-section" class="content-section" style="display:none;">
+                <div id="pendingRequestsContainer">
+                    <p>No pending requests at the moment.</p>
+                </div>
+            </section>
+
+            <section id="schedule-section" class="content-section" style="display:none;">
+                <div class="glass-card">
+                    <h3>Set Your Available Hours</h3>
+                    <form id="scheduleForm">
+                        <div class="input-group">
+                            <label>Available Day</label>
+                            <input type="date" id="availableDate">
+                        </div>
+                        <div class="input-group">
+                            <label>Time Slot</label>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="time" id="startTime" style="flex: 1;">
+                                <span style="align-self: center; color: white;">to</span>
+                                <input type="time" id="endTime" style="flex: 1;">
+                            </div>
+                        </div>
+                        <button type="submit" class="action-btn">Update Availability</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="messages-section" class="content-section" style="display:none;">
+                <div id="messageInbox"></div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="teacher.js"></script>
+</body>
+</html>

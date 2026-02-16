@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Unified Mentor</title>
+    <link rel="stylesheet" href="allstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="menu-icon-btn">☰</button>
+                <div class="logo">
+                    <h2>Student<span>Portal</span></h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-item active" data-target="search-section">Search Teachers</li>
+                    <li class="nav-item" data-target="my-bookings-section">My Bookings</li>
+                    <li class="nav-item" data-target="contact-section">Send Message</li>
+                    <li class="nav-item" data-target="sent-messages-section">Sent Messages</li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn delete-btn"><span class="logout-text">Logout</span></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-titles">
+                    <h1 id="section-title">Search Teachers</h1>
+                    <p class="welcome-text">Welcome, <span id="userNameDisplay">Student</span>!</p>
+                </div>
+            </header>
+
+            <section id="search-section" class="content-section">
+                <div class="search-bar-container">
+                    <input type="text" id="teacherSearch" placeholder="Search by name, department, or subject...">
+                    <button class="action-btn search-btn">Search</button>
+                </div>
+
+                <div class="booking-inputs-container glass">
+                    <div class="input-group-inline">
+                        <label>Date:</label>
+                        <input type="date" id="apptDate">
+                    </div>
+                    <div class="input-group-inline">
+                        <label>Time:</label>
+                        <input type="time" id="apptTime">
+                    </div>
+                    <div class="input-group-inline">
+                        <label>Purpose:</label>
+                        <input type="text" id="apptReason" placeholder="eg. Doubt in chapter 4">
+                    </div>
+                </div>
+                
+                <div id="teacherGrid" class="teacher-grid">
+                    <div class="teacher-card">
+                        <div class="card-header">
+                            <h3>Prof. Sachin Balo (HOD)</h3>
+                            <span class="dept-tag">Computer Science</span>
+                        </div>
+                        <p><strong>Subject:</strong> Software Engineering</p>
+                        <button class="book-now-btn">Book Appointment</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="my-bookings-section" class="content-section" style="display:none;">
+                <div class="glass-card table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Teacher</th>
+                                <th>Date/Time</th>
+                                <th>Purpose</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentBookingsBody">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="contact-section" class="content-section" style="display:none;">
+                <div class="glass-card">
+                    <h3>Direct Message to Instructor</h3>
+                    <form id="messageForm">
+                        <div class="input-group">
+                            <label>Select Teacher</label>
+                            <select id="msgTeacherSelect">
+                                <option value="">-- Choose Teacher --</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Message Purpose</label>
+                            <input type="text" id="msgSubject" placeholder="e.g., Doubts regarding Chapter 4">
+                        </div>
+                        <div class="input-group">
+                            <label>Detailed Message</label>
+                            <textarea id="msgContent" rows="5" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="action-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="sent-messages-section" class="content-section" style="display:none;">
+                <div id="sentMessagesInbox"></div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="student.js"></script>
+</body>
+</html>
