@@ -46,3 +46,5 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
    * Direct messaging to faculty.
    * [Student Panel](Student.html)
    * [Student Operations Logic](student.js)
+  
+## vi. Execution Instuctions 🚀
