@@ -48,3 +48,25 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
    * [Student Operations Logic](student.js)
   
 ## vi. Execution Instuctions 🚀
+1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects.....git
+2. **Configuration**: Insert the Firebase SDK in fb-config.js.
+3. **Run**: Open Auth.html using a local server (e.g., VS Code Live Server).
+
+## vii. Optimisation Strategies ⚡
+* **Code Level**: Implemented **Local Caching** for the teacher search. Instead of querying the
+  database on every keystroke, the system fetches the list once and filters the array locally,
+  reducing Firestore read costs by ~90%.
+* **Architecture Level**: Used **Asynchronous JS** (Async/Await) to prevent UI blocking during
+  operations.
+* **UI Level**: CSS **Glassmorphism** and **Backdrop-filters** are used to create a modern
+  interface without the heavy weight of external image assets.
+
+## viii. Test Cases 🧪
+
+| **ID** | **Feature** | **Test Description** | **Expected Result** |
+| :--- | :--- | :--- | :--- |
+| TC01 | Auth | Login with invalid credentials | System shows error, no redirect |
+| TC02 | Sidebar | Click toggle button | Sidebar collapses, text labels hide |
+| TC03 | Booking | Book without date/time | Alert pops up: "Fill all fields" |
+| TC04 | Search	| Type teacher name in search |	Grid updates instantly via local filter |
+| TC05 | Teacher | Cancel an appointment | Status changes to 'cancelled' in real-time |
