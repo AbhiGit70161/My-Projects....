@@ -51,6 +51,7 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
 1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects.....git
 2. **Configuration**: Insert the Firebase SDK in fb-config.js.
 3. **Run**: Open Auth.html using a local server (e.g., VS Code Live Server).
+4. **Credentials**: Open Book.xlsx using any spread sheet app (e.g., MS Excel, Google Sheets etc.) for using credentials. 
 
 ## vii. Optimisation Strategies ⚡
 * **Code Level**: Implemented **Local Caching** for the teacher search. Instead of querying the
