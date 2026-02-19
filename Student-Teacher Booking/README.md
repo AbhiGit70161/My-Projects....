@@ -48,7 +48,7 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
    * [Student Operations Logic](student.js)
   
 ## vi. Execution Instuctions 🚀
-1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects..../Student-Teacher%20Booking.git
+1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects..../Student-Teacher Booking.git
 2. **Configuration**: Insert the Firebase SDK in fb-config.js.
 3. **Run**: Open Auth.html using a local server (e.g., VS Code Live Server).
 4. **Credentials**: Open Book.xlsx using any spread sheet app (e.g., MS Excel, Google Sheets etc.) for using credentials. 
