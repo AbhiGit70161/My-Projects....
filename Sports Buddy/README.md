@@ -17,15 +17,13 @@ The project follows a **Three-Tier Architecture** optimized for scalability and 
 * **Data Layer (Firestore):** A NoSQL database structured for fast retrieval and low latency.
 
 ## 5. System Modules & Workflow 🔄
-**1. Authentication Module**
-* Secure login/registration using Firebase Auth.
-* Automatic redirection based on user roles (Admin vs. Standard User).
-
-**2. Admin Module**
-* **Category Management:** Add, update, or delete sports (e.g., Cricket, Football).
-* **Location Management:** Control the geographical scope of the app by managing cities and specific local areas.
-
-**3. User (Host) Module**
-* **Event Creation:** Host matches with specific details like ability level and precise timing.
-* **Dashboard:** View and manage personal "Scheduled Events."
-* **Dynamic Filtering:** Location dropdowns that update in real-time based on the selected city.
+1. **Authentication Module**
+   * Secure login/registration using Firebase Auth.
+   * Automatic redirection based on user roles (Admin vs. Standard User).
+2. **Admin Module**
+   * **Category Management:** Add, update, or delete sports (e.g., Cricket, Football).
+   * **Location Management:** Control the geographical scope of the app by managing cities and specific local areas.
+3. **User (Host) Module**
+   * **Event Creation:** Host matches with specific details like ability level and precise timing.
+   * **Dashboard:** View and manage personal "Scheduled Events."
+   * **Dynamic Filtering:** Location dropdowns that update in real-time based on the selected city.
