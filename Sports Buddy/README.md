@@ -26,13 +26,19 @@ The project follows a **Three-Tier Architecture** optimized for scalability and 
 1. **Authentication Module**
    * Secure login/registration using Firebase Auth.
    * Automatic redirection based on user roles (Admin vs. Standard User).
+   * [Login Page](Login.html)
+   * [Login Logic](authen.js)
 2. **Admin Module**
    * **Category Management:** Add, update, or delete sports (e.g., Cricket, Football).
    * **Location Management:** Control the geographical scope of the app by managing cities and specific local areas.
+   * [Admin Panel](Admn.html)
+   * [Admin Logic](admn.js)
 3. **User (Host) Module**
    * **Event Creation:** Host matches with specific details like ability level and precise timing.
    * **Dashboard:** View and manage personal "Scheduled Events."
    * **Dynamic Filtering:** Location dropdowns that update in real-time based on the selected city.
+   * [User/Host Panel](User.html)
+   * [User/Host Logic](user.js)
 
 ## 6. Execution Instuctions 🚀
 1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects.....git
