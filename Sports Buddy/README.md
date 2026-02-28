@@ -10,6 +10,10 @@
 * **Auth:** Firebase Authentication (Role-Based)
 * **Design:** Custom Mesh Gradients & Backdrop-filters for high-performance visuals
 
+## 3. Low-Level Design (LLD) & Data Models 📐
+
+
+
 ## 4. System Architecture 🏗️
 The project follows a **Three-Tier Architecture** optimized for scalability and speed.
 * **Presentation Layer (Client):** A responsive Single Page Application (SPA) built with vanilla JS and modular CSS.
@@ -38,3 +42,13 @@ The project follows a **Three-Tier Architecture** optimized for scalability and 
 * **Code Level**: Implemented **Real-time Snapshots** (onSnapshot) ensuring users see new matches instantly without refreshing the page.
 * **Architecture Level**: Used **Asynchronous JS** (Async/Await) to prevent UI blocking during database writes.
 * **UI Level**: Utilized **CSS Glassmorphism** and hardware-accelerated animations for a premium look without the weight of heavy image assets.
+
+## 8. Test Cases 🧪
+
+| **ID** | **Feature** | **Test Description** | **Expected Result** |
+| :--- | :--- | :--- | :--- |
+| TC01 | Auth | Login with invalid credentials | System shows error, no redirect |
+| TC02 | Filter | Select "Kolkata" in City dropdown | Area dropdown populates only Kolkata areas |
+| TC03 | Host | Create match without Event Name | Alert pops up: "Fill all fields" |
+| TC04 | Admin	| Delete a Sport Category |	Category disappears from User Host form instantly |
+| TC05 | User | Click "Delete" on owned event | Event is removed from Firestore and UI |
