@@ -27,3 +27,14 @@ The project follows a **Three-Tier Architecture** optimized for scalability and 
    * **Event Creation:** Host matches with specific details like ability level and precise timing.
    * **Dashboard:** View and manage personal "Scheduled Events."
    * **Dynamic Filtering:** Location dropdowns that update in real-time based on the selected city.
+
+## 6. Execution Instuctions 🚀
+1. **Repository**: Clone the public repo: git clone https://github.com/AbhiGit70161/My-Projects.....git
+2. **Configuration**: Insert the Firebase SDK in fb-con.js.
+3. **Run**: Open Login.html using a local server (e.g., VS Code Live Server).
+4. **Credentials**: Open Sports Buddy.xlsx using any spread sheet app (e.g., MS Excel, Google Sheets etc.) for using credentials.
+
+## 7. Optimisation Strategies ⚡
+* **Code Level**: Implemented **Real-time Snapshots** (onSnapshot) ensuring users see new matches instantly without refreshing the page.
+* **Architecture Level**: Used **Asynchronous JS** (Async/Await) to prevent UI blocking during database writes.
+* **UI Level**: Utilized **CSS Glassmorphism** and hardware-accelerated animations for a premium look without the weight of heavy image assets.
