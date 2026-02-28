@@ -27,8 +27,8 @@ The project follows a **Three-Tier Architecture** optimised for scalability and 
    * Loggin fails if they put wrong credentials.
    * [User Login](Auth.html)
    * [Authentication Logic](auth.js)
-   * [Rejistration](Rejister.html)
-   * [Rejistration Logic](register.js)
+   * [Registration](Rejister.html)
+   * [Registration Logic](register.js)
 2. **Admin Module**
    * Manage Teacher profiles (Add/Update/Delete)
    * Moderate Student registrations for security.
