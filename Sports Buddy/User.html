@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Sports Buddy</title>
+    <link rel="stylesheet" href="everystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="side-nav">
+        <div class="logo">
+            <h2>Sports Buddy</h2>
+        </div>
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-plus-circle"></i> Host Match</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> My Events</a></li>
+            <li><button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-content">
+        <section class="glass-section" id="add-event-section">
+            <h1>Host a Sports Event</h1>
+            <p>Fill in the details to find your sports buddies!</p>
+            
+            <form id="add-event-form" class="dashboard-form">
+                <div class="form-row">
+                    <input type="text" id="event-name" placeholder="Event Name (e.g. Friday Night Football)" required>
+                    <select id="sport-category" required>
+                        <option value="" disabled selected>Select Sport</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <select id="event-city" required>
+                        <option value="" disabled selected>Select City</option>
+                    </select>
+                    <select id="event-area" required>
+                        <option value="" disabled selected>Select Area</option>
+                    </select>
+
+                </div>
+
+                <div class="form-row">
+                    <input type="datetime-local" id="event-time" required>
+                    <select id="ability-level" required>
+                        <option value="" disabled selected>Ability Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Event</button>
+            </form>
+        </section>
+
+        <section class="glass-section" id="my-events-section">
+            <h2>My Scheduled Events</h2>
+            <div id="events-list" class="events-grid">
+                <p class="loading-msg">Loading your events...</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="user.js"></script>
+</body>
+</html>

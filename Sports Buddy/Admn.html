@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Sports Buddy</title>
+    <link rel="stylesheet" href="everystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="side-nav">
+        <div class="logo">
+            <h2>Sports Buddy <br><small>Admin</small></h2>
+        </div>
+        <ul>
+            <li><a href="#cat-section" class="active"><i class="fas fa-list"></i> Categories</a></li>
+            <li><a href="#loc-section"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
+            <li><button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-content">
+        <section class="glass-section" id="cat-section">
+            <h1>Manage Sports Categories</h1>
+            <form id="add-category-form" class="dashboard-form">
+                <div class="form-row">
+                    <input type="text" id="new-category" placeholder="Add New Sport (e.g. Swimming)" required>
+                    <button type="submit" class="submit-btn">Add Category</button>
+                </div>
+            </form>
+            <div id="category-list" class="admin-data-list">
+                </div>
+        </section>
+
+        <section class="glass-section" id="loc-section">
+            <h1>Manage Locations</h1>
+            
+            <form id="add-city-form" class="dashboard-form">
+                <h3>Add City</h3>
+                <div class="form-row">
+                    <input type="text" id="new-city" placeholder="City Name" required>
+                    <button type="submit" class="submit-btn">Add City</button>
+                </div>
+            </form>
+
+            <hr style="margin: 20px 0; border: 0.5px solid var(--glass-border);">
+
+            <form id="add-area-form" class="dashboard-form">
+                <h3>Add Area to City</h3>
+                <div class="form-row">
+                    <select id="city-dropdown" required>
+                        <option value="" disabled selected>Select City</option>
+                        </select>
+                    <input type="text" id="new-area" placeholder="Area Name" required>
+                    <button type="submit" class="submit-btn">Add Area</button>
+                </div>
+            </form>
+
+            <div id="location-display" class="admin-data-list">
+                </div>
+        </section>
+    </main>
+
+    <script type="module" src="admn.js"></script>
+</body>
+</html>
