@@ -20,6 +20,8 @@ The project follows a **Three-Tier Architecture** optimized for scalability and 
 * **Service Layer (Firebase):** Handles real-time data streams, authentication triggers, and security rules.
 * **Data Layer (Firestore):** A NoSQL database structured for fast retrieval and low latency.
 
+<img width="330" height="381" alt="Image" src="https://github.com/user-attachments/assets/3797fd1e-eaa2-4b45-a381-2a59b786d852" />
+
 ## 5. System Modules & Workflow 🔄
 1. **Authentication Module**
    * Secure login/registration using Firebase Auth.
