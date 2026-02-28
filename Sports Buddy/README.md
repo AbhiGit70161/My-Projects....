@@ -12,7 +12,7 @@
 
 ## 3. Low-Level Design (LLD) & Data Models 📐
 
-
+<img width="807" height="578" alt="Image" src="https://github.com/user-attachments/assets/1bad55bf-0623-47c6-98c8-3ddbce877c26" />
 
 ## 4. System Architecture 🏗️
 The project follows a **Three-Tier Architecture** optimized for scalability and speed.
