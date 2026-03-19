@@ -61,4 +61,5 @@ This simulator features a fully CSS-rendered Dog. Unlike basic simulators, this 
 The Student-Teacher Booking Appointment System is a modular web application designed to optimize the scheduling process in educational environments. By moving from traditional queueing to a digital BaaS (Backend-as-a-Service) model, this system reduces wait times and enhances communication between students and faculty.
 
 ## 6. Sports Buddy 🏏⚽🏀:-
+Sports Buddy is a real-time, modular web application designed to bridge the gap between sports enthusiasts. By moving away from fragmented group chats to a structured BaaS (Backend-as-a-Service) model, this platform allows users to host, discover, and join sports matches in their local areas with real-time updates and role-based access.
 
