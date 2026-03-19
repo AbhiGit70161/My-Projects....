@@ -34,6 +34,31 @@ I have used java script functions in the HTML file for Basic Calculator Project.
      * map(): Converts raw data arrays into HTML list items (li) for formatted display.
 
 ## 4. Virtual Pet Simulator 🐶:-
+1. **Project Overview 🚀**
+This simulator features a fully CSS-rendered Dog. Unlike basic simulators, this project uses a complex "State Machine" to transition the pet’s physical appearance based on its internal needs.
+
+2. **Technologies Used 🛠️**
+   * HTML5: Semantic structure for game layout and attribute tracking.
+   * CSS3: Advanced positioning, @keyframes animations, and glassmorphism UI.
+   * JavaScript (ES6): Logic engine for attribute decay, interaction handling, and DOM manipulation.
+
+3. **Key Features ✨**
+   * Dynamic Visual Assets: A multi-layered pet character featuring a head, body, ears, paws, and a wagging tail.
+   * Intelligent State Transitions:-
+     * Happy State: Triggered when happiness is > 80%. Dog perks up his ears, wags his tail faster, and sticks his tongue out.
+     * Sad State: Triggered by low happiness or high hunger. Ears droop and the tail stops wagging.
+     * Starving (Critical) State: Triggered when hunger hits 0%. Dog will physically cry with animated falling tears.
+   * Sleep State: Goldie closes his eyes and becomes semi-transparent to indicate resting.
+   * Real-Time Attribute Decay: Stats (Hunger, Happiness, Energy) decrease every 3 seconds, requiring constant user engagement.
+   * Immersive UI: Features a "Frosted Glass" (Glassmorphism) interface set against a high-definition nature background.
+
+4. **How to Interact 🎮**
+   * Feed 🍖: Reduces hunger. If Goldie is "Starving" (crying), feeding him will stop the tears.
+   * Play 🎾: Increases happiness but consumes energy. When playing, Goldie will perform a "Jump" animation.
+   * Sleep 😴: Fully restores energy but causes a small increase in hunger. Goldie's eyes will close during this state.
 
 ## 5. Student-Teacher Booking Appoinment 🗓️:-
 The Student-Teacher Booking Appointment System is a modular web application designed to optimize the scheduling process in educational environments. By moving from traditional queueing to a digital BaaS (Backend-as-a-Service) model, this system reduces wait times and enhances communication between students and faculty.
+
+## 6. Sports Buddy 🏏⚽🏀:-
+
