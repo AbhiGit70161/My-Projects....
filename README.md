@@ -48,14 +48,14 @@ This simulator features a fully CSS-rendered Dog. Unlike basic simulators, this 
      * Happy State: Triggered when happiness is > 80%. Dog perks up his ears, wags his tail faster, and sticks his tongue out.
      * Sad State: Triggered by low happiness or high hunger. Ears droop and the tail stops wagging.
      * Starving (Critical) State: Triggered when hunger hits 0%. Dog will physically cry with animated falling tears.
-   * Sleep State: Goldie closes his eyes and becomes semi-transparent to indicate resting.
+   * Sleep State: Dog closes his eyes and becomes semi-transparent to indicate resting.
    * Real-Time Attribute Decay: Stats (Hunger, Happiness, Energy) decrease every 3 seconds, requiring constant user engagement.
    * Immersive UI: Features a "Frosted Glass" (Glassmorphism) interface set against a high-definition nature background.
 
 4. **How to Interact 🎮**
-   * Feed 🍖: Reduces hunger. If Goldie is "Starving" (crying), feeding him will stop the tears.
-   * Play 🎾: Increases happiness but consumes energy. When playing, Goldie will perform a "Jump" animation.
-   * Sleep 😴: Fully restores energy but causes a small increase in hunger. Goldie's eyes will close during this state.
+   * Feed 🍖: Reduces hunger. If the Dog is "Starving" (crying), feeding him will stop the tears.
+   * Play 🎾: Increases happiness but consumes energy.
+   * Sleep 😴: Fully restores energy but causes a small increase in hunger. Dog's eyes will close during this state.
 
 ## 5. Student-Teacher Booking Appoinment 🗓️:-
 The Student-Teacher Booking Appointment System is a modular web application designed to optimize the scheduling process in educational environments. By moving from traditional queueing to a digital BaaS (Backend-as-a-Service) model, this system reduces wait times and enhances communication between students and faculty.
